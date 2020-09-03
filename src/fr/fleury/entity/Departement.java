@@ -8,8 +8,7 @@ public class Departement {
 
 	private int id;
 	private String nom;
-	private List<Etudiant> etudiants;
-	private List<Professeur> professeurs;
+
 
 	// Constructeur
 
@@ -46,26 +45,10 @@ public class Departement {
 		this.nom = nom;
 	}
 
-	public List<Etudiant> getEtudiants() {
-		return etudiants;
-	}
-
-	public void setEtudiants(List<Etudiant> etudiants) {
-		this.etudiants = etudiants;
-	}
-
-	public List<Professeur> getProfesseurs() {
-		return professeurs;
-	}
-
-	public void setProfesseurs(List<Professeur> professeurs) {
-		this.professeurs = professeurs;
-	}
-
 	
 	@Override
 	public String toString() {
-		return "Departement [id=" + id + ", nom=" + nom + ", étudiants=" + etudiants + ", professeurs=" + professeurs + "]";
+		return "Departement [id=" + id + ", nom=" + nom + "]";
 	}
 
 	

@@ -9,8 +9,7 @@ public class Matiere {
 	private int id;
 	private String nom;
 	
-	private List<Professeur> professeurs;
-	
+
 	//Constructeurs
 	public Matiere() {
 		super();
@@ -46,18 +45,11 @@ public class Matiere {
 		this.nom = nom;
 	}
 
-	public List<Professeur> getProfesseurs() {
-		return professeurs;
-	}
-
-	public void setProfesseurs(List<Professeur> professeurs) {
-		this.professeurs = professeurs;
-	}
 
 	//toString
 	@Override
 	public String toString() {
-		return "Matiere [id=" + id + ", nom=" + nom + ", professeurs=" + professeurs + "]";
+		return "Matiere [id=" + id + ", nom=" + nom + "]";
 	}
 	
 	

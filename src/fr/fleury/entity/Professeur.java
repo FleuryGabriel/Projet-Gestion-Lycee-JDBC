@@ -74,8 +74,13 @@ public class Professeur {
 	
 	@Override
 	public String toString() {
+		
+		if(departement.getNom()!=null && matiere.getNom()!=null) {
 		return "Professeur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", date_aff=" + date_aff + ", matiere="
 				+ matiere + ", departement=" + departement.getNom() + "]";
+		}else {
+			return "Professeur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", date_aff=" + date_aff + "]";
+		}
 	}
 	
 
